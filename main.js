@@ -13,9 +13,9 @@ $(".hideMe").click(function(){
 
   $(".changeColor").click(function() {
     
-	$("li:nth-child(3)").css({
-    "color": "red"
-  });
+	   $("li:nth-child(3)").css({
+       "color": "red"
+      });
 
   });
 
@@ -31,9 +31,9 @@ $(".hideMe").click(function(){
 
   $("li:nth-child(3)").click(function() {
     
-	$(this).animate({
+	   $(this).animate({
 		fontSize: "+=1px"
-	});
+	   });
 
   });
 
@@ -51,13 +51,13 @@ $(".hideMe").click(function(){
     
   	for (var i = 0; i < 4; i++){
 
-	$("li:nth-child(1)").remove();
+	       $("li:nth-child(1)").remove();
 
-	$("li").css({
-    "font-size": "40px"
-  	});
+	       $("li").css({
+                font-size: "40px"
+        	});
 
-	}
+	   }
 
   });
 
@@ -75,7 +75,7 @@ $(".hideMe").click(function(){
    $("*").dblclick(function() {
     
 	$("#makeSquare").css({
-    border-radius: 1px;
+    "border-radius": "1px";
   	});
 
   });
@@ -93,7 +93,7 @@ $(".hideMe").click(function(){
    $(".swatch.black").click(function() {
     
 	$("*").css({
-    background-color: #000;
+    "background-color": "#000";
   	});
 
   });
@@ -103,10 +103,11 @@ $(".hideMe").click(function(){
    $("#hover").hover(function() {
     
 	$(this).css({
-    background-color: red;
+    "background-color": "red";
   	});
 
   });
 
 });
+
 
