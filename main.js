@@ -3,15 +3,15 @@ $(document).ready(function(){
 
 //question 1...how to make it come back?
 
-	$(".hideMe").click(function(){
-		$(".hideMe").hide();
+  $(".hideMe").click(function(){
+	 	$(".hideMe").hide();
 	});
 
 //question 2
 
   $(".changeColor").click(function() {
     
-	   $("li:nth-child(3)").css({
+     $("li:nth-child(3)").css({
        "color": "red"
       });
 
@@ -21,7 +21,7 @@ $(document).ready(function(){
 
   $("li:nth-child(4)").click(function() {
     
-	$(this).append($(this).clone());
+  $(this).append($(this).clone());
 
   });
 
@@ -29,52 +29,47 @@ $(document).ready(function(){
 
   $("li:nth-child(3)").click(function() {
     
-	   $(this).animate({
-		fontSize: "+=1px"
-	   });
+     $(this).animate({
+    fontSize: "+=1px"
+     });
 
   });
 
-  //question 4...huh???...when to do .removeLi and when just removeLI
+    //question 4...huh???...when to do .removeLi and when just removeLI
 
   $(".removeLi").click(function() {
     
-	$("li:nth-child(2)").remove();
+     $("li:nth-child(2)").remove();
 
   });
 
-  //question 5...is this right??
+    //question 5...is this right??
 
   $("li:last").click(function() {
     
-  	for (var i = 0; i < 4; i++){
+    for (var i = 0; i < 4; i++){
 
-	       $("li:nth-child(1)").remove();
+        $("li:nth-child(1)").remove();
 
-	       $("li").css({
-                font-size: "40px"
-        	});
+         $("li").css("font-size", "40px")
 
-	   }
+     }
 
   });
-
 
   //question 6...not working...why?
 
    $(".cute").click(function() {
     
-	$(this).append($(this).clone(false));
+       $(this).append($(this).clone(false));
 
   });
 
     //question 7...why doesnt this work??
 
    $("*").dblclick(function() {
-    
-	$("#makeSquare").css({
-    "border-radius": "1px";
-  	});
+          
+       $("makeSquare").css("border-radius", "131px");
 
   });
 
@@ -82,29 +77,25 @@ $(document).ready(function(){
 
    $("#dontClick").click(function() {
     
-	alert("NOOOOOOOO!!!");
+       alert("NOOOOOOOO!!!");
 
-  });
+    });
 
     //question 9...not working
 
    $(".swatch.black").click(function() {
     
-	$("*").css({
-    "background-color": "#000";
-  	});
+       $("*").css("background-color", "#000")
 
-  });
+    });
 
    //question 10
 
    $("#hover").hover(function() {
     
-	$(this).css({
-    "background-color": "red";
-  	});
+       $(this).css("background-color", "red")
 
-  });
+     });
 
 });
 
