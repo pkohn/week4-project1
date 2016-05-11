@@ -3,10 +3,8 @@ $(document).ready(function(){
 
 //question 1...how to make it come back?
 
-$(".hideMe").click(function(){
+	$(".hideMe").click(function(){
 		$(".hideMe").hide();
-
-
 	});
 
 //question 2
