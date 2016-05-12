@@ -57,11 +57,11 @@ $(document).ready(function(){
 
   });
 
-  //question 6...not working...why?
+  //question 6...why is this cloning so many on the 2nd clone?
 
    $(".cute").click(function() {
     
-       $(this).append($(this).clone());
+       $(".cute").clone(true).insertAfter(".cute");
 
   });
 
