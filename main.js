@@ -35,9 +35,9 @@ $(document).ready(function(){
 
   });
 
-    //question 4...huh???...when to do .removeLi and when just removeLI
+    //question 4
 
-  $(".removeLi").click(function() {
+  $("#removeLi").click(function() {
     
      $("li:nth-child(2)").remove();
 
