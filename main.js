@@ -30,7 +30,7 @@ $(document).ready(function(){
   $("li:nth-child(3)").click(function() {
     
      $(this).animate({
-    fontSize: "+=1px"
+    "fontSize": "+=1px"
      });
 
   });
@@ -61,7 +61,7 @@ $(document).ready(function(){
 
    $(".cute").click(function() {
     
-       $(this).append($(this).clone(false));
+       $(this).append($(this).clone());
 
   });
 
@@ -69,11 +69,11 @@ $(document).ready(function(){
 
    $("*").dblclick(function() {
           
-       $("makeSquare").css("border-radius", "131px");
+       $("#makeSquare").css("border-radius", "1px");
 
   });
 
-     //question 8...not working?? when to do use #?
+     //question 8
 
    $("#dontClick").click(function() {
     
@@ -81,7 +81,7 @@ $(document).ready(function(){
 
     });
 
-    //question 9...not working
+    //question 9
 
    $(".swatch.black").click(function() {
     
@@ -89,11 +89,45 @@ $(document).ready(function(){
 
     });
 
+   $(".swatch.wood").click(function() {
+    
+       $("*").css("background-image", "url(http://phandroid.s3.amazonaws.com/wp-content/uploads/2015/03/wood-wallpaper-3.jpg)")
+
+    });
+
+   $(".swatch.chaos").click(function() {
+    
+       $("*").css("background-image", "url(http://www.henderson-art.co.uk/art/wallpaper/chaos.jpg)")
+
+    });
+
+   $(".swatch.restore").click(function() {
+    
+       $("*").css("background-color", "#white")
+
+    });
+
    //question 10
 
-   $("#hover").hover(function() {
+   //$("#hover").click(function() {
     
-       $(this).css("background-color", "red")
+     //  $("#hover").toggleClass("#hover-red")
+
+     //});
+
+     //question 11
+
+   $("#hover").click(function() {
+    
+     $("#hover").addClass("green")
+
+     });
+
+      //question 12
+
+   $("#hover-red").hover(function() {
+    
+     $("#hover").removeClass("green")
 
      });
 
